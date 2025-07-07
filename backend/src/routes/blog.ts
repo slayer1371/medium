@@ -37,7 +37,7 @@ blogRouter.use("/*", async (c, next) => {
     } catch (err) {
       console.error("JWT verification failed:", err);
       return c.json({ error: "Invalid token" }, 403);
-    }
+    } 
   });
 
 blogRouter.post("/", async (c) => {
